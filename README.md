@@ -1,5 +1,8 @@
 # Securepoint-Nagios-InterfaceStatus
 Short Bash script to check the Interface Status (up/down) from Securepoint UTM over SNMP for Nagios/Icinga (or other services).
+Based on this code: https://support.securepoint.de/viewtopic.php?f=27&t=6621&p=16058&hilit=snmp#p16058
+
+You cant use snmp directly because the interface OID can change it's number (wan0 changes frequently for us).
 
 Installation for Nagios:
 -----------------------
