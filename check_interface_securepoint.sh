@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 IP=$1
 COMMUNITY=$2
 SNMPVERSION=$3
@@ -13,12 +13,11 @@ then
  STATUS=6
 fi
 
-echo "Status: $STATUS"
 if [ $STATUS -eq 1 ]
 then
- echo "OK! - Interface is UP"
+ echo "OK - Interface is UP"
  exit 0
 else
- echo "Critical! Interface is DOWN"
+ echo "Critical - Interface is DOWN"
  exit 2
 fi
